@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Login from './containers/user/Login/Login';
+import Register from './containers/user/Register/Register'
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Header />
         <Switch>
           <Route path='/login' component={Login} />
-          <Route path='/register' component={Login} />
+          <Route path='/register' component={Register} />
         </Switch>
       </BrowserRouter>
     </div>

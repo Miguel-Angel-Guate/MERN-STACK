@@ -11,7 +11,11 @@ const Login = props => {
             password:event.target.password.value
         }
         axios.post('http://localhost:3002/users/login',user)
-        .then(res=>console.log(res.data))
+        .then(res=> {
+            setTimeout(() =>{
+                   props.history.push('/home')
+            }, 1500);
+     })
     }
     return (
         <div className="loginContainer">
