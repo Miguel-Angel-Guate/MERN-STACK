@@ -1,0 +1,17 @@
+@import '../../theme.scss';
+
+.header{
+       background-color: $Primary;
+       padding: 0 0.8em;
+       display: flex;
+       justify-content: space-around;
+
+       a {
+              all: unset;
+              cursor: pointer;
+              padding: 0.5em;
+              &:hover {
+                     background-color: $Second;
+              }
+       }
+}
