@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
-const mongo_URI = process.env.mongo_URI || 'mongodb://localhost:27017/login-mern'
-mongoose.connect(mongo_URI,{
+const { mongoATLAS } = require('./keys')
+const databaseConnect =  mongoATLAS //: 'mongodb://localhost:27017/theBest'
+mongoose.connect(databaseConnect,{
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
     useFindAndModify: false
 })
-.then(()=>console.log('Successfully conected to MongoDB'))
+.then(()=>console.log('YOU ARE SUCCESSFULLY CONNECTED on mongoatlas'))
 .catch(console.error)

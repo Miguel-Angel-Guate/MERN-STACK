@@ -4,8 +4,11 @@
        background-color: $Primary;
        padding: 0 0.8em;
        display: flex;
-       justify-content: space-around;
-
+       justify-content: space-between;
+.right{
+       display: flex;
+      
+}
        a {
               all: unset;
               cursor: pointer;
